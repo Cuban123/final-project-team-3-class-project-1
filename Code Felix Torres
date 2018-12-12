@@ -1,0 +1,161 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+    string answer1, answer2, reply;
+    string answer3, reply2;
+	string answer4, answer5, reply3;
+	string answer6, answer7, reply4;
+    answer1 = "start";
+    answer2 = "end";
+    answer3 = "show list";
+    answer4 = "pull gun";
+	answer5 = "leave";
+    answer6 = "shoot";
+	answer7 = "nothing";
+  
+	
+	//game part//
+    
+
+    
+    
+cout<<"                                        Welcome to Freedom Heist! \n";
+cout<<"            “In this game, you will be going on a adventure to steal loot and escape with your life.\n";
+cout<<"                 There will be options given to you to choose from if there is a scenario. \n";
+cout<<"             The outcomes you choose just reflect on how you escape, but doesn’t change how you end \n";
+cout<<"                                     choose the one you think is best \n";
+cout<<"                                            Have Fun!\n\n";	
+
+  cout<<"type start to start or type end to quit game: ";
+	getline(cin, reply);
+	
+if (reply == answer1)
+{
+cout << "\n You are a coal miner that lives in a dystopia called insert dystopia name . \n";
+cout << "The ruler corrupted the government and turned the whole country into a communist democracy. \n";
+cout << "Tired of living a life in a power abusing and corrupted government, you decide to leave. \n";
+cout << "You talk to your two closest friends that are also coal miners and they both agree. \n";		
+cout << "The name of your two friends: Mike and John \n\n";		
+cout <<"On Day 1 \n";
+cout << R"(
+                          Town Map
+    ___________________________________________________________________________
+		|  home   |                             |                    |  
+		|         |                             |                    |  
+ 		|___   ___|                             |   Police station   |   
+                                                        |                    |
+		___________                             |                    |
+		|         |                             |________   _________| 
+		|         |
+ 		|___   ___|
+
+
+                                           		 _______________________
+		                                         |                      |
+		                      _____________      |                      |
+		___________           |           |      |       bank           |
+		|         |           |  store    |      |                      |   
+		|         |           |           |      |                      | 
+ 		|___   ___|           |____  _____|      |_________  ___________|
+                                                  
+		___________                     
+		|         |
+		|         |
+ 		|___   ___|
+		
+      
+	    
+	______________________________entrance_________________________________
+                      )" << endl;
+cout <<"you go into town to find the necessary equipment to carry out the big heist \n";
+cout <<"You find a shop that sells everything you need \n";
+cout <<"You go inside \n";
+cout <<"Hello there, My name is Bil. I run this store \n";
+cout <<"What are you looking for today (type: show list): ";
+getline(cin, reply2);
+if (reply2 == answer3){
+cout <<"The shop keeper sees your list and gets you everything you need \n\n";
+
+cout <<"Day 2\n";
+cout << R"(
+                          Bank Map
+                      _________________________________________________________
+                     |     |       |                    |                     |
+                     |     |       |                    |                     |
+                     |     |___ _ _|                                          |
+                     |                                                        |
+                     |       safe                       |                     |
+                     |                                  |      bank teller    |
+                     |__________________________________|  ________    _______|
+                     |           door to bank teller -> |--|                  |
+                     |                                                        |
+                     |                                                        |
+                     |                                                        |
+                     |                                                        |
+                     |                                                        |
+                     \__________________________entrance______________________/
+                      )" << endl;
+
+cout <<"You're outside the bank. The big day has arrived \n";	
+cout << "You've been planning this for months. You're scare, but in desperate need of money \n";
+cout << "Mike was to wait outside with a carriage to escape \n";
+cout << "While you and John went inside to rob the place \n";
+cout << "finally, you, and John build the courage and go inside. \n";
+
+cout << "what would you like to do inside (type: pull gun or leave) : ";
+	getline(cin, reply3);
+	if (reply3 == answer4){
+cout <<"\n\nYou pull your gun out and point it at the teller\n";
+cout <<"You hand her a bag\n";
+cout <<"you order the teller to put all your money the bag!\n";
+cout <<"Meanwhile john shoots into the ceiling in order to scare the people around\n";
+cout <<"Two police officers hear the shots\n";
+cout <<"One goes inside, the other goes to get back up\n";
+cout <<"Jhon dosen't notice one of the police officer got inside\n";
+cout <<"You have to act quick\n";
+cout <<"what would you like to do(type: nothing or shoot): ";
+getline(cin, reply4);
+if (reply4 == answer6){
+ cout << "\n\nyou shoot the officer\n";
+ cout << "the teller finishes bagging up the money\n";
+ cout << "You and John leave\n"; 
+ cout << "You put all the money in the carriage and escape.";
+
+
+
+}
+else if (reply == answer6){
+ cout << "the officer kills john";
+ cout << "You try to shoot him but fail";
+ cout << "You get arrested";
+
+
+}
+
+
+}
+else if (reply3 == answer5){
+    cout <<"you left the bank";
+    
+}
+
+}
+
+
+else if(reply == answer2){
+    cout << "See you!";
+
+}
+else {
+ cout << "Wrong answer";
+ cout << "See you!";
+}
+
+
+}
+ return 0;
+}
